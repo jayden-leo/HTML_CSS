@@ -195,7 +195,7 @@ h1 {
 
 .banner .right .content dd {
     font-size: 14px;
-    color: #4e4e4e;
+    color: #a5a5a5;
     letter-spacing: 1px;
 }
 
@@ -210,4 +210,5 @@ h1 {
     font-weight: 700;
     text-align: center;
     line-height: 40px;
+    letter-spacing: 1px;
 }
