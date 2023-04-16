@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 快捷键 !+tab  : 快速生成html模板-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学成在线</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 网站的首页，所有的网站都叫index.html。因为服务器的首页都是访问index.html -->
+    <!-- 布局顺序思路：从外到内，从上到下，从左到右 -->
+    <!-- CSS编写顺序思路：浮动，盒子模型，文字样式 -->
+    <!-- 头部 -->
+    <div class="header wrapper">
+        <!-- logo -->
+        <h1>
+            <a href="#"><img src="./imgs/logo.png" alt=""></a>
+        </h1>
+        <!-- 导航 -->
+        <div class="nav">
+            <!-- 一般导航都是用列表方式嵌套a标签，这样引擎的解析效率快 -->
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">课程</a></li>
+                <li><a href="">职业规划</a></li>
+            </ul>
+        </div>
+        <!-- 搜索 -->
+        <div class="search">
+            <input type="text" placeholder="输入关键字">
+            <button></button>
+        </div>
+        <!-- 用户信息 -->
+        <div class="user">
+            <img src="./imgs/user.png" alt="">
+            <span>jayden</span>
+        </div>
+    </div>
+</body>
+
+</html>

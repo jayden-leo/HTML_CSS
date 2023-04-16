@@ -1,0 +1,118 @@
+/* index.css是用来美化index.html的。一般命名同名即可 */
+/* 清楚默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式：让整个盒子的大小自动调整 */
+    box-sizing: border-box;
+}
+
+li {
+    /* 取消列表li的默认样式 点 */
+    list-style: none;
+}
+
+a {
+    /* 取消a标签的默认样式 蓝色和下划线 */
+    text-decoration: none;
+}
+/* 保证使用了浮动窗口后的错误 */
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 模板核心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+    height: 42px;
+    /* 上下30px，左右居中 */
+    margin: 30px auto;
+}
+
+h1 {
+    float: left;
+}
+
+/* 导航 */
+.nav {
+    float: left;
+    height: 42px;
+    margin-left: 70px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a {
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+    /* border-bottom: 2px solid #00a4ff; */
+
+    font-size: 18px;
+    color: #050505;
+
+}
+
+/* 当鼠标放在标签上的样式 */
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.search {
+    float: left;
+    margin-left: 59px;
+    width: 411px;
+    height: 42px;
+    border: 2px solid #00a4ff;
+}
+
+.search input {
+    float: left;
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;
+    border: 0;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    float: left;
+    width: 48px;
+    height: 40px;
+    background-image: url(../imgs/btn.png);
+    border: 0;
+}
+
+.user {
+    float: right;
+    margin-right: 30px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img{
+    /* 调节图片对齐方式 */
+    vertical-align: middle;
+}
