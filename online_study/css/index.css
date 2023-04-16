@@ -16,11 +16,14 @@ a {
     /* 取消a标签的默认样式 蓝色和下划线 */
     text-decoration: none;
 }
+
 /* 保证使用了浮动窗口后的错误 */
-.clearfix:before,.clearfix:after {
+.clearfix:before,
+.clearfix:after {
     content: "";
     display: table;
 }
+
 .clearfix:after {
     clear: both;
 }
@@ -79,16 +82,16 @@ h1 {
 .search {
     float: left;
     margin-left: 59px;
-    width: 411px;
+    width: 412px;
     height: 42px;
-    border: 2px solid #00a4ff;
+    border: 1px solid #00a4ff;
 }
 
 .search input {
     float: left;
     padding-left: 20px;
     width: 360px;
-    height: 38px;
+    height: 40px;
     border: 0;
 }
 
@@ -98,13 +101,14 @@ h1 {
 }
 
 .search button {
-    float: left;
-    width: 48px;
-    height: 40px;
+    float: right;
+    width: 50px;
+    height: 41px;
     background-image: url(../imgs/btn.png);
     border: 0;
 }
 
+/* 用户信息 */
 .user {
     float: right;
     margin-right: 30px;
@@ -112,7 +116,98 @@ h1 {
     line-height: 42px;
 }
 
-.user img{
+.user img {
     /* 调节图片对齐方式 */
     vertical-align: middle;
+}
+
+/* 轮播图 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../imgs/banner.png);
+}
+
+.banner .left {
+    float: left;
+    padding: 0px 20px;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: #000000;
+    opacity: 0.3;  */
+    /* 行高属于文字类的属性，可以继承 */
+    line-height: 44px;
+}
+
+.banner .left span {
+    float: right;
+}
+
+.banner .left a {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+}
+
+.banner .left a:hover {
+    color: #00b4ff;
+}
+
+.banner .right {
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.banner .right h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.banner .right .content {
+    padding: 0 18px;
+}
+
+.banner .right .content dl {
+    padding: 12px 0;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.banner .right .content dt {
+    font-size: 16px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+}
+
+.banner .right .content dd {
+    font-size: 14px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+}
+
+.banner .right .more {
+    display: block;
+    margin: 4px auto 0;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
 }
